@@ -1,0 +1,5 @@
+langgraph==1.1.10
+langchain-core>=0.3.0       # required for @tool decorator and ToolMessage
+langchain_openai==1.2.1
+python-dotenv==1.0.1
+isort==8.0.1
