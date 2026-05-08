@@ -1,0 +1,97 @@
+{
+  "trained_at": "2026-05-08 07:22:35",
+  "artifact_version": "1.0",
+  "mode": "offline_training_saved_for_live_inference",
+  "feature_count": 30,
+  "feature_cols": [
+    "cypher_length",
+    "cypher_entropy",
+    "cypher_digit_count",
+    "cypher_alpha_count",
+    "cypher_upper_count",
+    "cypher_lower_count",
+    "cypher_symbol_count",
+    "cypher_space_count",
+    "cypher_equal_count",
+    "cypher_plus_slash_count",
+    "cypher_dot_dash_count",
+    "cypher_digit_ratio",
+    "cypher_alpha_ratio",
+    "cypher_upper_ratio",
+    "cypher_lower_ratio",
+    "cypher_symbol_ratio",
+    "cypher_space_ratio",
+    "cypher_base64_ratio",
+    "cypher_base32_ratio",
+    "cypher_morse_ratio",
+    "cypher_dot_dash_ratio",
+    "cypher_hex_char_count",
+    "cypher_hex_ratio",
+    "cypher_hex_separator_count",
+    "cypher_ascii_token_count",
+    "cypher_ascii_valid_token_count",
+    "cypher_ascii_valid_token_ratio",
+    "cypher_ascii_separator_count",
+    "cypher_is_likely_hex_shape",
+    "cypher_is_likely_ascii_shape"
+  ],
+  "training_rows": 3500,
+  "label_counts": {
+    "Base64": 700,
+    "Base32": 700,
+    "Morse": 700,
+    "Hex": 700,
+    "ASCII": 700
+  },
+  "prediction_counts": {
+    "Base32": 702,
+    "Morse": 700,
+    "Hex": 700,
+    "ASCII": 700,
+    "Base64": 698
+  },
+  "training_script": "train_local_pipeline.py",
+  "supported_cipher_types": [
+    "Base64",
+    "Base32",
+    "Morse",
+    "Hex",
+    "ASCII"
+  ],
+  "generated_training_columns": [],
+  "source_cipher_counts": {
+    "Base64": 700,
+    "Base32": 700,
+    "Morse": 700,
+    "Hex": 700,
+    "ASCII": 700
+  },
+  "max_rows_per_type": 700,
+  "shap_background_rows": 80,
+  "raw_dataset_shape": [
+    5692,
+    8
+  ],
+  "expanded_dataset_shape": [
+    3500,
+    6
+  ],
+  "cleaned_dataset_shape": [
+    3500,
+    46
+  ],
+  "training_rows_used_for_svm": 3500,
+  "svm_accuracy": 0.9985714285714286,
+  "svm_classes": [
+    "ASCII",
+    "Base32",
+    "Base64",
+    "Hex",
+    "Morse"
+  ],
+  "fcm_fpc": 0.7142,
+  "fcm_engine": "skfuzzy.cmeans",
+  "risk_feature": "cypher_entropy",
+  "forecast_target": "cypher_entropy",
+  "date_col": "record_date"
+}
