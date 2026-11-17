@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# runtime logs
+data/outputs/
+artifacts/outcome_tracking_log.csv
+
+.vscode/
+.ipynb_checkpoints/
+*.log
+.DS_Store
+Thumbs.db
