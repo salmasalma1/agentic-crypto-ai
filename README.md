@@ -124,6 +124,4 @@ LANGSMITH_PROJECT=
 
 This was a solo final project by Salma Ashraf. It is not actively maintained, and I have not re-tested it end to end since publishing. The `agent/` folder has its own `requirements.txt` with pinned versions for the LangGraph orchestrator.
 
-## License
 
-[MIT](LICENSE) © 2026 Salma Ashraf
